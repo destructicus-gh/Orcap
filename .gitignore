@@ -1,0 +1,7 @@
+*.bin
+.gradle/2.2/taskArtifacts/cache.properties.lock
+.gradle/2.2/taskArtifacts/cache.properties
+.idea/*
+build/*
+out/*
+*.iml

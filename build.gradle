@@ -1,0 +1,32 @@
+group 'ryan'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    compile 'com.intellij:forms_rt:7.0.3'
+    compile 'net.openhft:compiler:2.2.1'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+sourceSets {
+    main {
+        java { srcDirs = [] }    // no source dirs for the java compiler
+        groovy { srcDir 'src' }  // compile everything in src/ with groovy
+    }
+}
+
+
+task run(dependsOn: 'classes', type: JavaExec){
+    main = 'mainRun'
+    classpath = sourceSets.main.runtimeClasspath
+}
