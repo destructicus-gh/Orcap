@@ -1,0 +1,28 @@
+package com
+
+import org.springframework.boot.SpringApplication
+import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.context.ApplicationContext
+/**
+ * Created by a689638 on 5/2/2016.
+ * Copyright (C) 2016 HEB
+ * @author Ryan Anders
+ * This software is the confidential and proprietary information 
+ * of HEB
+ */
+@SpringBootApplication
+public class Application {
+
+    public static void main(String[] args) {
+        ApplicationContext ctx = SpringApplication.run(Application.class, args);
+
+        System.out.println("Let's inspect the beans provided by Spring Boot:");
+
+        String[] beanNames = ctx.getBeanDefinitionNames();
+        Arrays.sort(beanNames);
+        for (String beanName : beanNames) {
+            System.out.println(beanName);
+        }
+    }
+
+}

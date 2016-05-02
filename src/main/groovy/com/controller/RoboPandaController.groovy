@@ -1,6 +1,6 @@
-package controller
+package com.controller
 
-import io.ToTextPane
+import com.controller.io.ToTextPane
 import main.java.gui.RoboPanda
 import net.openhft.compiler.CompilerUtils
 

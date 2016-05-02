@@ -1,4 +1,4 @@
-import service.WindowTools
+package com
 
 import javax.swing.*
 import java.awt.*
@@ -13,7 +13,7 @@ import java.awt.*
 UIManager.setLookAndFeel(
         UIManager.getSystemLookAndFeelClassName());
 gui.OverclockedOrca orca = new gui.OverclockedOrca()
-WindowTools.bootWindow orca.getPanel1(), new Dimension(640, 480), "OrCA/P", true
+service.WindowTools.bootWindow orca.getPanel1(), new Dimension(640, 480), "OrCA/P", true
 
 
 //GroovyClassLoader classLoader = new GroovyClassLoader();
