@@ -1,11 +1,13 @@
-package model
-import gui.OverclockedOrca
+package com.model
+
+import com.service.TaskService
+import com.service.WindowTools
+import main.java.gui.OverclockedOrca
 import main.java.gui.RoboPanda
-import service.TaskService
-import service.WindowTools
 
 import javax.swing.event.TreeSelectionEvent
 import java.awt.*
+
 /**
  * Created by a689638 on 3/23/2016.
  * Copyright (C) 2016 HEB
@@ -13,7 +15,7 @@ import java.awt.*
  * This software is the confidential and proprietary information 
  * of HEB
  */
-class TaskOption extends TreeOption{
+public class TaskOption extends TreeOption{
     String name
     static String title = "Task Options"
 

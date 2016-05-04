@@ -1,14 +1,16 @@
-package service
-import gui.OverclockedOrca
-import model.MenuOption
-import model.QuizOption
-import model.TaskOption
-import model.TreeOption
+package com.service
+
+import com.model.MenuOption
+import com.model.QuizOption
+import com.model.TaskOption
+import com.model.TreeOption
+import main.java.gui.OverclockedOrca
 
 import javax.swing.event.ListSelectionEvent
 import javax.swing.event.TreeSelectionEvent
 import javax.swing.event.TreeSelectionListener
 import javax.swing.tree.DefaultMutableTreeNode
+
 /**
  * Created by a689638 on 3/23/2016.
  * Copyright (C) 2016 HEB
@@ -29,13 +31,14 @@ def static loadQuiz() {
 }
 
 
-def static loadTasks(){
+def static loadTasks() {
     def task = new DefaultMutableTreeNode("Tasks")
     def task1 = new DefaultMutableTreeNode(new TaskOption("Task 1"))
     task.add task1
     task
 
 }
+
 def static TreeSelectionListener getTreeListener() {
     TreeSelectionListener ts = new TreeSelectionListener() {
         @Override

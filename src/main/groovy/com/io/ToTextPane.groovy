@@ -1,4 +1,4 @@
-package com.controller.io
+package com.io
 
 import javax.swing.JTextPane
 

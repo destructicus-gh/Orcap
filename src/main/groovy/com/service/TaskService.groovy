@@ -1,6 +1,6 @@
-package service
+package com.service
 
-import model.Task
+import com.model.Task
 
 /**
  * Created by a689638 on 3/23/2016.

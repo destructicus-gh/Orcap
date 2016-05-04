@@ -4,4 +4,6 @@
 .idea/*
 build/*
 out/*
+node_modules/*
 *.iml
+*.npmignore

@@ -1,13 +1,14 @@
 package main.java.gui;
 
-import com.intellij.uiDesigner.core.GridConstraints;
-import com.intellij.uiDesigner.core.GridLayoutManager;
-import com.controller.RoboPandaController;
-import model.Task;
-
-import javax.swing.*;
 import java.awt.*;
 import java.io.File;
+
+import javax.swing.*;
+
+import com.controller.RoboPandaController;
+import com.intellij.uiDesigner.core.GridConstraints;
+import com.intellij.uiDesigner.core.GridLayoutManager;
+import com.model.Task;
 
 /**
  * Created by a689638 on 3/21/2016.

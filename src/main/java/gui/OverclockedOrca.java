@@ -1,19 +1,15 @@
-package gui;
+package main.java.gui;
+
+import java.awt.*;
+
+import javax.swing.*;
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.TreeSelectionModel;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
-import model.MenuOption;
-import service.OrcaService;
-
-import javax.swing.*;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
-import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.TreeSelectionModel;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import com.service.OrcaService;
 
 /**
  * Created by a689638 on 3/23/2016.
@@ -29,12 +25,12 @@ public class OverclockedOrca {
     private static OverclockedOrca self;
     private JPanel panel1;
     private JTree tree1;
-    private JList<MenuOption> list1;
+    private JList<String> list1;
     private JButton doThisButton;
     private JLabel rightLabel;
 
-    DefaultListModel<MenuOption> model;
-    MenuOption current;
+//    DefaultListModel<MenuOption> model;
+    //MenuOption current;
 
     public OverclockedOrca() {
         if (self == null) {
@@ -45,10 +41,10 @@ public class OverclockedOrca {
         DefaultMutableTreeNode top =
                 new DefaultMutableTreeNode("The Java Series");
         $$$setupUI$$$();
-        model = new DefaultListModel<>();
-        list1.setModel(model);
-        list1.addListSelectionListener(OrcaService::optionSelect);
-        doThisButton.addActionListener(e -> current.doAction());
+//        model = new DefaultListModel<>();
+//        list1.setModel(model);
+//        list1.addListSelectionListener(OrcaService::optionSelect);
+        // doThisButton.addActionListener(e -> current.doAction());
     }
 
 
@@ -60,9 +56,9 @@ public class OverclockedOrca {
         return tree1;
     }
 
-    public JList getList1() {
-        return list1;
-    }
+//    public JList getList1() {
+//        return list1;
+//    }
 
     public JButton getDoThisButton() {
         return doThisButton;
@@ -76,17 +72,17 @@ public class OverclockedOrca {
         return rightLabel;
     }
 
-    public DefaultListModel<MenuOption> getListModel() {
-        return model;
-    }
+//    public DefaultListModel<MenuOption> getListModel() {
+//        return model;
+//    }
 
-    public MenuOption getCurrent() {
-        return current;
-    }
-
-    public static void setCurrent(MenuOption current) {
-        self.current = current;
-    }
+//    public MenuOption getCurrent() {
+//        return current;
+//    }
+//
+//    public static void setCurrent(MenuOption current) {
+//        self.current = current;
+//    }
 
     private void createUIComponents() {
         // TODO: place custom component creation code here

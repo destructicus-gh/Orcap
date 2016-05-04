@@ -1,15 +1,16 @@
-package gui;
+package main.java.gui;
 
-import com.intellij.uiDesigner.core.GridConstraints;
-import com.intellij.uiDesigner.core.GridLayoutManager;
-import com.intellij.uiDesigner.core.Spacer;
-import model.Question;
-
-import javax.swing.*;
 import java.awt.*;
 import java.util.Iterator;
 import java.util.SortedMap;
 import java.util.TreeMap;
+
+import javax.swing.*;
+
+import com.intellij.uiDesigner.core.GridConstraints;
+import com.intellij.uiDesigner.core.GridLayoutManager;
+import com.intellij.uiDesigner.core.Spacer;
+import com.model.Question;
 
 /**
  * Created by a689638 on 3/23/2016.

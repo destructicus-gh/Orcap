@@ -32,13 +32,22 @@ repositories {
 }
 
 dependencies {
+    //Groovy
     compile 'org.codehaus.groovy:groovy-all:2.3.11'
     compile 'com.intellij:forms_rt:7.0.3'
+
+    //JavaCompiler
     compile 'net.openhft:compiler:2.2.1'
 
-    compile("org.springframework.boot:spring-boot-starter-web")
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+    //WebSocket
+    compile("org.springframework.boot:spring-boot-starter-websocket")
+    compile("org.springframework:spring-messaging")
 
+    //Spring
+    compile("org.springframework.boot:spring-boot-starter-web")
+
+    //Testing
+    testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
 

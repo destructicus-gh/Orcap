@@ -1,4 +1,4 @@
-package model
+package com.model
 
 import groovy.transform.Canonical
 
@@ -11,7 +11,7 @@ import groovy.transform.Canonical
  */
 
 @Canonical
-class Question {
+public class Question {
     String questionText;
     String questionBody;
     List<String> answers;

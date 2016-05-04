@@ -1,5 +1,7 @@
 package com
 
+import main.java.gui.OverclockedOrca
+
 import javax.swing.*
 import java.awt.*
 
@@ -12,11 +14,5 @@ import java.awt.*
  */
 UIManager.setLookAndFeel(
         UIManager.getSystemLookAndFeelClassName());
-gui.OverclockedOrca orca = new gui.OverclockedOrca()
+OverclockedOrca orca = new OverclockedOrca()
 service.WindowTools.bootWindow orca.getPanel1(), new Dimension(640, 480), "OrCA/P", true
-
-
-//GroovyClassLoader classLoader = new GroovyClassLoader();
-//def myClass = classLoader.parseClass(new File("disconnected/taskA.groovy"))
-//Class aClass = CompilerUtils.CACHED_COMPILER.loadFromJava("taskResponse", new File("disconnected/taskResponse.java").text);
-//myClass.run(aClass.newInstance());

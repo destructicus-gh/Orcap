@@ -1,11 +1,11 @@
-package model
+package com.model
 
-import gui.OverclockedOrca
-import gui.ZombiePenguin
-import service.WindowTools
+import com.service.WindowTools
+import main.java.gui.OverclockedOrca
+import main.java.gui.ZombiePenguin
 
 import javax.swing.event.TreeSelectionEvent
-import java.awt.Dimension
+import java.awt.*
 
 /**
  * Created by a689638 on 3/23/2016.
@@ -14,7 +14,7 @@ import java.awt.Dimension
  * This software is the confidential and proprietary information 
  * of HEB
  */
-class QuizOption extends TreeOption{
+public class QuizOption extends TreeOption{
     String name
     static String title = "Quiz Options"
 

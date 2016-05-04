@@ -1,4 +1,4 @@
-package model
+package com.model
 
 /**
  * Created by a689638 on 3/23/2016.
@@ -7,7 +7,7 @@ package model
  * This software is the confidential and proprietary information 
  * of HEB
  */
-class Task {
+public class Task {
     String name
     File file
 

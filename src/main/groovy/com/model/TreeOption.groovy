@@ -1,7 +1,9 @@
-package model
-import gui.OverclockedOrca
+package com.model
+
+import main.java.gui.OverclockedOrca
 
 import javax.swing.event.TreeSelectionEvent
+
 /**
  * Created by a689638 on 3/23/2016.
  * Copyright (C) 2016 HEB
@@ -9,7 +11,7 @@ import javax.swing.event.TreeSelectionEvent
  * This software is the confidential and proprietary information 
  * of HEB
  */
-abstract class TreeOption{
+public abstract class TreeOption{
 
     List<MenuOption> options = new ArrayList<>();
 
