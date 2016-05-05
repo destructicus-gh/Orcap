@@ -7,3 +7,5 @@ out/*
 node_modules/*
 *.iml
 *.npmignore
+Gulpfile.js
+package.json
