@@ -17,9 +17,13 @@
 
 <div class="m-s--1 g-s--5 g--3 m-m--1 m--3 g-t--12 m-t--0 login-panel card fade-in-from-right ">
     <h1 class="g--4 fade-in-from-top ">Orcap.</h1>
+    <p>{{ctrl.message}}</p>
     <input class="fade-in-from-top  full-input"
+           ng-model="username"
            type="text" required placeholder="Username">
     <input class="fade-in-from-top  full-input"
+           ng-model="password"
            type="password" required placeholder="Password">
-    <button class="btn--raised fade-in-from-top  btn--primary">Login</button>
+    <button class="btn--raised fade-in-from-top  btn--primary"
+            ng-click="ctrl.login(username, password)">Login</button>
 </div>
