@@ -16,8 +16,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>7680</WindowHeight>
-  <WindowWidth>25215</WindowWidth>
+  <WindowHeight>13020</WindowHeight>
+  <WindowWidth>25125</WindowWidth>
   <WindowTopX>0</WindowTopX>
   <WindowTopY>0</WindowTopY>
   <ProtectStructure>False</ProtectStructure>
@@ -33,22 +33,47 @@
    <Protection/>
   </Style>
   <Style ss:ID="s62">
-   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Color="#222222"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Color="#333333"/>
   </Style>
  </Styles>
  <Worksheet ss:Name="Sheet1">
-  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="1" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="9" ss:ExpandedRowCount="3" x:FullColumns="1"
    x:FullRows="1" ss:DefaultRowHeight="15">
-   <Column ss:AutoFitWidth="0" ss:Width="198.75"/>
+   <Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="198.75"/>
    <Column ss:AutoFitWidth="0" ss:Width="41.25"/>
    <Column ss:AutoFitWidth="0" ss:Width="42.75"/>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Question 1</Data></Cell>
+    <Cell><Data ss:Type="String">What is the result?</Data></Cell>
     <Cell><Data ss:Type="String">import java.util.*;&lt;/br&gt;public class Primes2 {&lt;/br&gt;public static void main(String[] args) {&lt;/br&gt;Integer[] primes = {2, 7, 5, 3};&lt;/br&gt;MySort ms = new MySort();&lt;/br&gt;Arrays.sort(primes, ms);&lt;/br&gt;for(Integer p2: primes)&lt;/br&gt;System.out.print(p2 + &quot; &quot;);&lt;/br&gt;}&lt;/br&gt;static class MySort implements Comparator {&lt;/br&gt;public int compare(Integer x, Integer y) {&lt;/br&gt;return y.compareTo(x);&lt;/br&gt;}&lt;/br&gt;}&lt;/br&gt;}</Data></Cell>
-    <Cell ss:StyleID="s62"><Data ss:Type="String">2 3 5 7&#160;</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">2 3 5 7</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="String">2 7 5 3</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="String">7 5 3 2</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="String">Compilation fails.</Data></Cell>
     <Cell ss:StyleID="s62"><Data ss:Type="String">D</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Because</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Question 2</Data></Cell>
+    <Cell><Data ss:Type="String">What is the result?</Data></Cell>
+    <Cell><Data ss:Type="String">import java.util.*;&lt;/br&gt;public class Primes2 {&lt;/br&gt;public static void main(String[] args) {&lt;/br&gt;Integer[] primes = {2, 7, 5, 3};&lt;/br&gt;MySort ms = new MySort();&lt;/br&gt;Arrays.sort(primes, ms);&lt;/br&gt;for(Integer p2: primes)&lt;/br&gt;System.out.print(p2 + &quot; &quot;);&lt;/br&gt;}&lt;/br&gt;static class MySort implements Comparator {&lt;/br&gt;public int compare(Integer x, Integer y) {&lt;/br&gt;return y.compareTo(x);&lt;/br&gt;}&lt;/br&gt;}&lt;/br&gt;}</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">2 3 5 7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">2 7 5 3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">7 5 3 2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Compilation fails.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">D</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Because</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Question 3</Data></Cell>
+    <Cell><Data ss:Type="String">What is the result?</Data></Cell>
+    <Cell><Data ss:Type="String">import java.util.*;&lt;/br&gt;public class Primes2 {&lt;/br&gt;public static void main(String[] args) {&lt;/br&gt;Integer[] primes = {2, 7, 5, 3};&lt;/br&gt;MySort ms = new MySort();&lt;/br&gt;Arrays.sort(primes, ms);&lt;/br&gt;for(Integer p2: primes)&lt;/br&gt;System.out.print(p2 + &quot; &quot;);&lt;/br&gt;}&lt;/br&gt;static class MySort implements Comparator {&lt;/br&gt;public int compare(Integer x, Integer y) {&lt;/br&gt;return y.compareTo(x);&lt;/br&gt;}&lt;/br&gt;}&lt;/br&gt;}</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">2 3 5 7</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">2 7 5 3</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">7 5 3 2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Compilation fails.</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">D</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Because</Data></Cell>
    </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
@@ -62,8 +87,8 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>11</ActiveRow>
-     <ActiveCol>7</ActiveCol>
+     <ActiveRow>5</ActiveRow>
+     <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
